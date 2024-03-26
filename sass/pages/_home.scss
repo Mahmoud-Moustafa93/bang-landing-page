@@ -1,10 +1,11 @@
+// ABOUT SECTION
 .about {
   padding: $section-padding-lg;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(38rem, min(54rem, 45%)));
-  gap: $grid-gap;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   justify-content: space-between;
+  gap: $grid-gap-lg;
 
   @include respondMax($phone-land) {
     padding: $section-padding-sm;
@@ -14,16 +15,20 @@
     position: relative;
   }
 
+  &__phone-img {
+    width: 100%;
+  }
+
   &__right-col {
     display: flex;
     flex-direction: column;
-    gap: $flex-gap;
+    gap: $flex-gap-sm;
 
     .heading-secondary {
-      margin-bottom: 0 !important;
+      margin-bottom: 0;
     }
 
-    .btn-primary {
+    .btn--primary {
       align-self: flex-start;
     }
   }
@@ -32,15 +37,63 @@
     grid-area: 2 / 1 / 3 / 3;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    flex-grow: 1;
-  }
-
-  .notification-box {
-    position: absolute;
-    top: 15%;
-    right: 0;
+    gap: $flex-gap-sm;
   }
 }
+// ========================= //
+
+// OFFER SECTION
+.offer {
+  padding: $section-padding-lg;
+  background-color: $color-secondary;
+  color: white;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-content: space-between;
+  gap: $grid-gap-md;
+
+  @include respondMax($phone-land) {
+    padding: $section-padding-sm;
+  }
+
+  &__left-col {
+    display: flex;
+    flex-direction: column;
+    gap: $flex-gap-sm;
+
+    .heading-secondary {
+      margin-bottom: 0;
+    }
+
+    .paragraph-primary {
+      margin-top: 4rem;
+    }
+  }
+
+  &__right-col {
+    position: relative;
+  }
+
+  &__phone-img {
+    width: 100%;
+  }
+
+  &__benefits {
+    grid-area: 2 / 1 / 3 / 3;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .benefit-box:first-child {
+      position: relative;
+      top: 1.3rem;
+    }
+  }
+}
+// ========================= //
