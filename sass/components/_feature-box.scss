@@ -1,0 +1,15 @@
+.feature-box {
+  background-color: $color-grey-light-1;
+  border-radius: 10px;
+  padding: 0 2rem;
+  width: 35rem;
+  height: 15rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & > * {
+    margin-bottom: 0;
+  }
+}

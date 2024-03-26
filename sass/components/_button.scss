@@ -1,0 +1,10 @@
+.btn {
+  font-family: $font-bold;
+  padding: 1.5rem 2rem;
+  border: 1px solid $color-primary;
+}
+
+.btn-primary {
+  background-color: $color-primary;
+  color: white;
+}

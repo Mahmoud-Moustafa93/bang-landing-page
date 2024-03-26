@@ -8,7 +8,7 @@
     "server": "webpack serve",
     "watch:sass": "sass sass/main.scss:dist/css/style.css --watch",
     "compile:js": "webpack --config webpack.config.js",
-    "start": "npm-run-all --parallel server watch:sass compile:js",
+    "start": "npm-run-all --parallel watch:sass compile:js",
     "compile:sass": "sass sass/main.scss:dist/css/style.css",
     "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" dist/css/style.css -o dist/css/style.prefix.css",
     "compress:css": "sass dist/css/style.prefix.css:dist/css/style.css --style compressed",
@@ -30,5 +30,8 @@
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
   }
 }

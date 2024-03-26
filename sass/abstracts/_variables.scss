@@ -14,6 +14,14 @@ $font-primary: "Gilroy-Regular", sans-serif;
 $font-bold: "Gilroy-Bold", sans-serif;
 $default-font-size: 1.6rem;
 
+$heading-font-size-1: 6.4rem;
+$heading-font-size-2: 3.6rem;
+$heading-font-size-3: 2.4rem;
+
+$paragraph-font-size-1: 2.2rem;
+$paragraph-font-size-2: 1.8rem;
+$paragraph-font-size-3: 1.4rem;
+
 // MARGIN
 $margin-bottom-sm: 2rem;
 $margin-bottom-md: 4rem;
@@ -22,6 +30,13 @@ $margin-bottom-lg: 8rem;
 $margin-top-sm: 2rem;
 $margin-top-md: 4rem;
 $margin-top-lg: 8rem;
+
+//PADING
+$section-padding-sm: 5rem 3rem;
+$section-padding-lg: 7rem 8rem;
+
+// FLEX
+$flex-gap: 2rem;
 
 // GRID
 $grid-gap: 6rem;

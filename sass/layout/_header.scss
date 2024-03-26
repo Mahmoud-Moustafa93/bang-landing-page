@@ -1,0 +1,31 @@
+.header {
+  background-color: $color-primary;
+  height: 7.5rem;
+
+  display: flex;
+
+  &__left-container {
+    margin-right: auto;
+    padding-left: 2.5rem;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu-btn {
+    margin-right: 3rem;
+  }
+
+  &__logo-img {
+    height: 5rem;
+  }
+
+  &__call-btn {
+    display: inline-block;
+    height: 100%;
+  }
+
+  &__call-img {
+    height: 100%;
+  }
+}

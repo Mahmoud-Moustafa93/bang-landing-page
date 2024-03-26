@@ -1,0 +1,46 @@
+.heading-primary {
+  font-family: $font-bold;
+  font-size: $heading-font-size-1;
+  margin-bottom: $margin-bottom-md;
+}
+
+.heading-secondary {
+  font-family: $font-bold;
+  font-size: $heading-font-size-2;
+  margin-bottom: $margin-bottom-md;
+}
+
+.heading-tertiary {
+  font-family: $font-bold;
+  font-size: $heading-font-size-3;
+  margin-bottom: $margin-bottom-md;
+}
+
+.paragraph-primary {
+  font-size: $paragraph-font-size-1;
+}
+
+.paragraph-secondary {
+  font-size: $paragraph-font-size-2;
+}
+
+.paragraph-tertiary {
+  font-family: $font-bold;
+  font-size: $paragraph-font-size-3;
+}
+
+.paragraph-default {
+  font-size: $default-font-size;
+}
+
+.text-red {
+  color: $color-primary;
+}
+
+.text-regular {
+  font-family: $font-primary;
+}
+
+.text-bold {
+  font-family: $font-bold;
+}

@@ -9,6 +9,15 @@
 
 // 3. Base stuff
 @import "base/base";
+@import "base/typography";
 
-// 4. Pages
+// 4. Reusable components
+@import "components/button";
+@import "components/feature-box";
+@import "components/notification-box";
+
+// 5. Layout
+@import "layout/header";
+
+// 6. Pages
 @import "pages/home";

@@ -39,19 +39,19 @@ body {
   font-size: $default-font-size;
   line-height: 1.7;
   color: $color-text;
-  min-height: 100vh;
+}
 
-  text-align: center;
+.container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 /**
   * Basic styles for links
   */
 a {
-  color: $color-primary;
   text-decoration: none;
 
   @include on-event {

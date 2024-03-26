@@ -9,11 +9,147 @@
       type="image/png"
       href="./assets/images/favicon.png"
     />
+
+    <!-- Font awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap framework CDN -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="dist/css/style.css" />
+
+    <!-- Main script -->
     <script defer src="dist/script.js"></script>
     <title>BANG!</title>
   </head>
   <body>
-    <h2>Bang landing page</h2>
+    <!-- Header -->
+    <header class="header">
+      <!-- Header left container -->
+      <div class="header__left-container">
+        <a href="#" class="header__menu-btn">
+          <i class="fa-solid fa-bars fa-2x" style="color: #ffffff"></i>
+        </a>
+        <a href="/" class="header__logo-btn">
+          <img
+            src="./assets/images/logo.png"
+            class="header__logo-img"
+            alt="logo"
+          />
+        </a>
+      </div>
+
+      <!-- Header right container -->
+      <div class="header__right-container">
+        <a href="#" class="header__call-btn">
+          <img
+            src="./assets/images/call-bang.png"
+            class="header__call-img"
+            alt="call bang"
+          />
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="about">
+        <div class="about__left-col">
+          <img
+            src="./assets/images/about.png"
+            class="about__phone-img"
+            alt="phone"
+          />
+
+          <div class="notification-box">
+            <img
+              src="./assets/images/notification-square.png"
+              class="notification-box__icon"
+              alt="notification icon"
+            />
+            <p class="paragraph-secondary">
+              Your home's <span class="text-red text-bold">BANG!</span><br />
+              <span class="text-red">code is 36363</span>
+            </p>
+
+            <button class="notification-box__btn-close">&times;</button>
+          </div>
+        </div>
+
+        <div class="about__right-col">
+          <p class="about__announcement">Just launched in Kingston, UK</p>
+          <h2 class="heading-secondary">
+            Plumber prices are crazy.<br />
+            Save BIG by unlocking<br />
+            your home's 2023<br />
+            Tradesperson BANG!
+          </h2>
+          <p class="paragraph-primary">
+            A BANG! is an exclusive price for your home. The next time you need
+            a plumber simply unlock your home's 2023 Tradesperson BANG! and book
+            an expert plumber at your home's discounted 2023 price.
+          </p>
+          <button class="btn btn-primary">
+            Get your home's Tradesperson BANG!
+          </button>
+        </div>
+
+        <div class="about__features">
+          <div class="feature-box">
+            <h3 class="heading-tertiary text-regular">
+              Just launched in<br />
+              Kingston, UK
+            </h3>
+            <img
+              src="./assets/images/location.png"
+              class="feature-box__icon"
+              alt="location icon"
+            />
+          </div>
+
+          <div class="feature-box">
+            <h3 class="heading-tertiary">
+              Experts at<br />
+              your home's<br />
+              exclusive price
+            </h3>
+            <img
+              src="./assets/images/wallet.png"
+              class="feature-box__icon"
+              alt="location icon"
+            />
+          </div>
+
+          <div class="feature-box">
+            <h3 class="heading-tertiary text-regular">
+              Reliable and insured<br />
+              tradespeople
+            </h3>
+            <img
+              src="./assets/images/tick-red.png"
+              class="feature-box__icon"
+              alt="location icon"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
   </body>
 </html>

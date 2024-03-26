@@ -1,5 +1,46 @@
-/* ===================== Main Styling ===================== */
-h2 {
-  color: blue;
-  background-color: red;
+.about {
+  padding: $section-padding-lg;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(38rem, min(54rem, 45%)));
+  gap: $grid-gap;
+  justify-content: space-between;
+
+  @include respondMax($phone-land) {
+    padding: $section-padding-sm;
+  }
+
+  &__left-col {
+    position: relative;
+  }
+
+  &__right-col {
+    display: flex;
+    flex-direction: column;
+    gap: $flex-gap;
+
+    .heading-secondary {
+      margin-bottom: 0 !important;
+    }
+
+    .btn-primary {
+      align-self: flex-start;
+    }
+  }
+
+  &__features {
+    grid-area: 2 / 1 / 3 / 3;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+
+  .notification-box {
+    position: absolute;
+    top: 15%;
+    right: 0;
+  }
 }
