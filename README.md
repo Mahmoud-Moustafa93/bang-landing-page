@@ -3,7 +3,7 @@
 The website is created using:
 
 - HTML / HTML5
-- CSS / CSS3
+- CSS / CSS3 (Flexbox & Grid)
 - SASS
 - Typescript 5
 
